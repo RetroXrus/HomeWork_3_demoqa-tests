@@ -20,8 +20,8 @@ public class AutomationPracticeFormTests {
     void fillFormTest() {
         open("/automation-practice-form");
         CheckEmpty.nothingElse();
-        FillForm.FillData();
-        СheckEquals.TextExist();
+        FillForm.fillData();
+        СheckEquals.textExist();
     }
 
     @AfterAll

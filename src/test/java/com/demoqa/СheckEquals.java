@@ -4,7 +4,7 @@ import static com.codeborne.selenide.Condition.text;
 import static com.codeborne.selenide.Selenide.$;
 
 public class СheckEquals {
-    static void TextExist() {
+    static void textExist() {
         $("#example-modal-sizes-title-lg").shouldHave(text(Data.form));
         $("thead th",0).shouldHave(text(Data.tableColumn1));
         $("thead th",1).shouldHave(text(Data.tableColumn2));

@@ -6,7 +6,7 @@ import static com.codeborne.selenide.Condition.value;
 import static com.codeborne.selenide.Selenide.$;
 
 public class FillForm {
-    static void FillData() {
+    static void fillData() {
         $("#firstName").setValue(Data.firstName);    // #firstName вместо [id=firstName]
         $("#firstName").shouldHave(value(Data.firstName));
         $("#lastName").setValue(Data.lastName);
